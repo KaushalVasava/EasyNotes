@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    <color name="lightblue">#B4DBFA</color>-->
+<!--    <color name="blue">#316FD8</color>-->
+<!--    <color name="buttonLabel">#FFFFFF</color>-->
+    <color name="grey">#605C5C</color>
+    <color name="grey_dark">#AAA7A7</color>
+
+    <color name="blue_500">#2196f3</color>
+    <color name="blue_200">#6ec6ff</color>
+    <color name="blue_700">#0069c0</color>
+
+    <color name="blue_sec_500">#2979ff</color>
+    <color name="blue_sec_200">#75a7ff</color>
+    <color name="blue_sec_700">#004ecb</color>
+
+<!--    <color name="primaryColor">#b3e5fc</color>-->
+<!--    <color name="primaryLightColor">#e6ffff</color>-->
+<!--    <color name="primaryDarkColor">#82b3c9</color>-->
+<!--    <color name="secondaryColor">#03a9f4</color>-->
+<!--    <color name="secondaryLightColor">#67daff</color>-->
+<!--    <color name="secondaryDarkColor">#007ac1</color>-->
+
+<!--    <color name="colorPrimary">#E0E0E0</color>-->
+<!--    <color name="colorPrimaryDark">#FBB8AC</color>-->
+<!--    <color name="colorAccent">#FEDBD0</color>-->
+<!--    <color name="textColorPrimary">#442C2E</color>-->
+<!--    <color name="toolbarIconColor">@color/textColorPrimary</color>-->
+</resources>

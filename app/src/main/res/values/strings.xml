@@ -1,0 +1,48 @@
+<resources>
+    <string-array name="sorting_list">
+        <item>Sort by Modification time</item>
+        <item>Sort by Creation time</item>
+        <item>Sort by Low to high priority</item>
+        <item>Sort by High to low priority</item>
+        <item>Sort by Red</item>
+        <item>Sort by Yellow</item>
+        <item>Sort by Green</item>
+    </string-array>
+    <string-array name="time_list">
+        <item>Select Time</item>
+        <item>2 Minute</item>
+        <item>5 Minute</item>
+        <item>10 Minute</item>
+        <item>15 Minute</item>
+        <item>30 Minute</item>
+        <item>45 Minute</item>
+        <item>1 Hour</item>
+        <item>2 Hour</item>
+        <item>3 Hour</item>
+        <item>6 Hour</item>
+        <item>12 Hour</item>
+        <item>24 Hour</item>
+    </string-array>
+    <string-array name="reminder_type_list">
+        <item>One Time</item>
+        <item>Repeat</item>
+        <item>Everyday</item>
+    </string-array>
+    <string name="app_name">EasyNote</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_note">Note…</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Note not saved</string>
+    <string name="new_note">New Note</string>
+    <string name="add_note">Add note</string>
+    <string name="all_note_delete_message">Are you confirm to delete all notes?</string>
+    <string name="detail_description">Detail Description</string>
+    <string name="date_format">hh:mm:ss a, d MMMM yyyy</string>
+    <string name="date_and_time">date and time</string>
+    <string name="create_new_note">Create New Note</string>
+    <string name="oldtime">dd/MM/yyyy hh:mm:ss a</string>
+    <string name="password_create">Secure your note : \n - Minimum 4 character required \n - Maximum 15 characters allow \n - You can use characters AbC... \n - Numbers ie. 1,2,3... \n - Special symbols ie. #$@...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_all">Select all</string>
+</resources>
+
