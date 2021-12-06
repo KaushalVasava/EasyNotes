@@ -24,15 +24,20 @@
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/drawable/ic_share.xml" value="0.14739583333333334" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/drawable/ic_speak.xml" value="0.14739583333333334" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/drawable/item_click_ripple.xml" value="0.14739583333333334" />
-        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_home.xml" value="0.16145833333333334" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_main2.xml" value="0.12239583333333333" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_new_note.xml" value="0.18" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/activity_open_note.xml" value="0.18" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/custom_dialog.xml" value="0.22" />
-        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/example_widget.xml" value="0.12239583333333333" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/example_widget.xml" value="0.22" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/fragment_home.xml" value="0.17864583333333334" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/fragment_new_note.xml" value="0.17864583333333334" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/fragment_note.xml" value="0.12239583333333333" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/fragment_open_note.xml" value="0.17864583333333334" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/mic_alert.xml" value="0.12239583333333333" />
-        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/note_item.xml" value="0.67" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/note_item.xml" value="0.22" />
+        <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/note_item_grid.xml" value="0.17864583333333334" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/reminder_layout.xml" value="0.25" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/layout/toolbar.xml" value="0.14" />
         <entry key="..\:/Projects/Android Projects/SmartNotes/app/src/main/res/menu/main_note__action_menu.xml" value="0.12239583333333333" />

@@ -37,10 +37,10 @@
     <string name="add_note">Add note</string>
     <string name="all_note_delete_message">Are you confirm to delete all notes?</string>
     <string name="detail_description">Detail Description</string>
-    <string name="date_format">hh:mm:ss a, d MMMM yyyy</string>
+    <string name="date_format">HH:mm:ss, d MMM yyyy</string>
     <string name="date_and_time">date and time</string>
     <string name="create_new_note">Create New Note</string>
-    <string name="oldtime">dd/MM/yyyy hh:mm:ss a</string>
+    <string name="oldtime">dd/MM/yyyy hh:mm:ss a and hh:mm:ss a, d MMM yyyy</string>
     <string name="password_create">Secure your note : \n - Minimum 4 character required \n - Maximum 15 characters allow \n - You can use characters AbC... \n - Numbers ie. 1,2,3... \n - Special symbols ie. #$@...</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_all">Select all</string>
