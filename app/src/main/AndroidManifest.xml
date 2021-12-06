@@ -12,35 +12,15 @@
         android:theme="@style/Theme.EasyNote">
         <activity
             android:name=".activity.HomeActivity"
-            android:exported="true">
+            android:exported="true" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activities.MainActivity"
-            android:launchMode="singleTop">
-          </activity>
-        <activity
-            android:name=".ui.activities.OpenNoteActivity"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".ui.activities.NewNoteActivity"
-            android:parentActivityName=".ui.activities.MainActivity"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="text/plain" />
-            </intent-filter>
-        </activity>
-
-        <receiver android:name=".ui.widget.NoteWidget">
+        <receiver android:name="com.lasuak.smartnotes.widget.NoteWidget"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -51,10 +31,6 @@
         </receiver>
         <receiver android:name=".broadcast.AlarmReceiver">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="com.lasuak.smartnotes.note_reminder"/> -->
-            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
-            <!-- </intent-filter> -->
         </receiver>
 
         <meta-data

@@ -126,7 +126,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), NoteListener,
             }
         } else if (!is_in_action_mode) {
             val action =HomeFragmentDirections.actionHomeFragmentToOpenNoteFragment(
-                    note.title, note.note, note.id, note.reminderTime, note.priority
+                    note.title, note.note, note.id, note.reminderTime, note.priority,note.time
                 )
 //            val pref = requireActivity().getSharedPreferences("NOTE",MODE_PRIVATE).edit()
 //            pref.putString("note_title",note.title)

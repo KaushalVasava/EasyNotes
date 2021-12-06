@@ -75,7 +75,7 @@ class OpenNoteFragment : Fragment(R.layout.fragment_open_note) {
         txtTitle = args.noteTitle //pref.getString("note_title",null)//args.noteTitle
         txtId = args.noteId //pref.getString("note_text",null)//args.noteId
         txtNote = args.noteDetail //pref.getInt("note_id",0)//args.noteDetail
-        //noteTime = args.time
+        noteTime = args.time
 
         reminderTime = args.reminderTime //pref.getString("note_reminder",null)//args.reminderTime
         priority = args.priority //pref.getInt("note_priority",3)//args.priority
@@ -686,11 +686,6 @@ class OpenNoteFragment : Fragment(R.layout.fragment_open_note) {
             val textName = binding.editText.text.toString().trim()
             val textTitle = binding.editTitle.text.toString().trim()
 
-            if (txtNote != textName || txtTitle != textTitle) {
-                Log.d("NEW", "true");
-            }
-            if (reminderTime != binding.txtReminder.text.toString())
-                Log.d("NEW", "true 2 ${binding.txtReminder.text}");
             if ((textName.isNotEmpty() || textTitle.isNotEmpty())
                 && (txtNote != textName || txtTitle != textTitle)
                 || (checkPriority != priority && priority != 1 ||

@@ -639,7 +639,7 @@ class NoteViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun deleteAllNote(binding: FragmentHomeBinding, context: Context) {
-        if (binding.recyclerView.isEmpty()) {
+        if (adapter.itemCount==0) {
             Toast.makeText(context, "Note List is Empty", Toast.LENGTH_SHORT).show()
         } else {
             val materialAlertDialog = MaterialAlertDialogBuilder(context)

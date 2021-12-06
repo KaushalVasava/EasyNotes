@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.lasuak.smartnotes.R
+import com.lasuak.smartnotes.activity.HomeActivity
 import com.lasuak.smartnotes.ui.activities.MainActivity
 import com.lasuak.smartnotes.ui.activities.MainActivity.Companion.CHANNEL_ID
 
@@ -17,7 +18,7 @@ class AlarmReceiver : BroadcastReceiver() {
 
         val textTitle: String = intent!!.getStringExtra("noteTitle").toString()
 
-        val intent2 = Intent(context, MainActivity::class.java)
+        val intent2 = Intent(context, HomeActivity::class.java)
         intent2.putExtra("Title", textTitle)
 
         intent2.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK

@@ -55,6 +55,9 @@
         <argument
             android:name="priority"
             app:argType="integer" />
+        <argument
+            android:name="time"
+            app:argType="string" />
     </fragment>
 </navigation>
 <!--<argument-->

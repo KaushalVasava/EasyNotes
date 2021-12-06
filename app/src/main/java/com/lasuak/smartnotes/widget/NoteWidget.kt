@@ -1,4 +1,4 @@
-package com.lasuak.smartnotes.ui.widget
+package com.lasuak.smartnotes.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
