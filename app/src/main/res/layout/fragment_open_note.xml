@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/open_note_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    tools:context=".fragment.OpenNoteFragment">
+
+    <TextView
+        android:id="@+id/txtReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSecondary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/optionLayout"
+        />
+    <ImageButton
+        android:id="@+id/cancelReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cancel"
+        android:layout_marginTop="8dp"
+        app:tint="?attr/colorOnSecondary"
+        android:background="?attr/colorOnPrimary"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtReminder"
+        android:contentDescription="Cancel Reminder"
+        />
+    <ImageView
+        android:id="@+id/priorityGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textPriority"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/priority_green" />
+
+    <ImageView
+        android:id="@+id/priorityYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textPriority"
+        app:layout_constraintStart_toEndOf="@id/priorityGreen"
+        android:background="@drawable/priority_yellow"
+        android:foregroundGravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/priorityRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textPriority"
+        app:layout_constraintStart_toEndOf="@id/priorityYellow"
+        android:background="@drawable/priority_red"
+        android:foregroundGravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/textPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Priority : "
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ledger"
+        android:gravity="start"
+        android:hint="Title"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priorityGreen"
+        app:layout_constraintBottom_toTopOf="@id/editText"
+        />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="start|top"
+        android:hint="@string/detail_description"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <HorizontalScrollView
+        android:id="@+id/optionLayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?attr/colorOnPrimary"
+        app:layout_constraintTop_toTopOf="@id/priorityGreen"
+        app:layout_constraintBottom_toBottomOf="@id/priorityGreen"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/imgReminder"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                app:tint = "?attr/colorPrimary"
+                android:src="@drawable/ic_reminder"
+                android:contentDescription="Reminder" />
+
+            <ImageButton
+                android:id="@+id/speak_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:src="@drawable/ic_speak"
+                android:contentDescription="Text to speech" />
+
+            <ImageButton
+                android:id="@+id/mic_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Speech to text" />
+
+            <ImageButton
+                android:id="@+id/copyNote"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:tint = "?attr/colorPrimary"
+                android:backgroundTint="?attr/colorOnPrimary"
+                android:src="@drawable/ic_copy"
+                android:contentDescription="Copy Note" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

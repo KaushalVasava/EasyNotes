@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lasuak.smartnotes.fragment.HomeFragment"
+        android:label="EasyNote"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_newNoteFragment"
+            app:destination="@id/newNoteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_openNoteFragment"
+            app:destination="@id/openNoteFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/newNoteFragment"
+        android:name="com.lasuak.smartnotes.fragment.NewNoteFragment"
+        android:label="New Note"
+        tools:layout="@layout/fragment_new_note">
+    </fragment>
+    <fragment
+        android:id="@+id/openNoteFragment"
+        android:name="com.lasuak.smartnotes.fragment.OpenNoteFragment"
+        android:label="Open Note"
+        tools:layout="@layout/fragment_open_note">
+
+        <argument
+            android:name="noteTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="noteDetail"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="noteId"
+            app:argType="integer" />
+        <argument
+            android:name="reminderTime"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="priority"
+            app:argType="integer" />
+    </fragment>
+</navigation>
+<!--<argument-->
+<!--android:name="Time"-->
+<!--app:argType="string" />-->
+<!-- -->
